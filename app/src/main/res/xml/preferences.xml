@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SwitchPreferenceCompat
+        app:key="notifications"
+        app:title="Enable message notifications"/>
+    <SwitchPreference
+        app:key = "pref_notifications"
+        app:title="Turn on Auto-reply"/>
+
+    <EditTextPreference
+        app:key="pref_autoreply"
+        app:title="Auto reply"
+        app:summary = "I will respond as soon as I can"/>
+
+</PreferenceScreen>

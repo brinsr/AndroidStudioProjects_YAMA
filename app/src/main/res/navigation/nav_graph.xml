@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ReadMessageFragment">
+
+    <fragment
+        android:id="@+id/ReadMessageFragment"
+        android:name="com.example.yama.ReadMessage"
+        android:label="Read Message"
+        tools:layout="@layout/fragment_readmessage">
+
+        <action
+            android:id="@+id/action_ReadMessageFragment_to_ComposeMessageFragment"
+            app:destination="@id/ComposeMessageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ComposeMessageFragment"
+        android:name="com.example.yama.ComposeMessageFragment"
+        android:label="Compose Message"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_ComposeMessageFragment_to_ReadMessageFragment"
+            app:destination="@id/ReadMessageFragment" />
+    </fragment>
+
+</navigation>
