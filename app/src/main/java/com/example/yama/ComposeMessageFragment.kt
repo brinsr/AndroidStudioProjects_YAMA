@@ -69,7 +69,7 @@ class ComposeMessageFragment : Fragment() {
                 if (isGranted) {
                     Log.v(TAG, "Permission granted")
                 } else {
-                    Log.e(TAG, "permission needed to proceed")
+                    Log.e(TAG, "Permission needed to proceed")
                 }
             }
 
@@ -170,29 +170,4 @@ class ComposeMessageFragment : Fragment() {
             }
         }
     }
-
-//    override fun onResume() {
-//        super.onResume()
-//
-//        val myPackageName = getPackageName()
-//        if(!Telephony.Sms.getDefaultSmsPackage(requireContext()).equals(myPackageName)){
-//            //app is not default
-//            //show the "not currently set as the default SMS app" interface
-//            val viewGroup = findViewById(R.id.not_default_app)
-//            viewGroup.setVisibility(View.VISIBLE)
-//
-//            //Set up a button that allows the user to change the default SMS app
-//            val btn_change_default = binding.btnChangeDefault
-//            btn_change_default.setOnClickListener{
-//                val intent = Intent(Telephony.Sms.Intents.ACTION_CHANGE_DEFAULT)
-//                intent.putExtra(Telephony.Sms.Intents.EXTRA_PACKAGE_NAME, requireContext().packageName)
-//                startActivity(intent)
-//            }
-//        } else{
-//            //app is the default
-//            //Hide the "not currently set as the dafault SMS app"
-//            val viewGroup = findViewById(R.id.not_default_app)
-//            viewGroup.setVisibility(View.GONE)
-//        }
-//    }
 }

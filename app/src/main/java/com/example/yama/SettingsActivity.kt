@@ -18,11 +18,9 @@ class SettingsActivity : AppCompatActivity() {
     class SettingsFragment:PreferenceFragmentCompat(){
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
-
         }
 
         override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
-
             setPreferencesFromResource(R.xml.preferences,rootKey)//sets the layout
         }
     }
